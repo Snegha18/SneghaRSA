@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Snegha RSA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f4f0ff, #ffffff);
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #D8B4FE;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #D8B4FE;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .about-header h2 {
+      font-size: 42px;
+      color: #4b0082;
+      margin-bottom: 10px;
+    }
+
+    .about-header p {
+      font-size: 18px;
+      color: #666;
+      font-style: italic;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .about-role {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #6a0dad;
+    }
+
+    .about-description {
+      text-align: center;
+      font-style: italic;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .info-box {
+      background-color: #efe6ff;
+      border-left: 5px solid #6a0dad;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .about-bio {
+      font-size: 17px;
+      text-align: justify;
+      color: #333;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 15px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 22px;
+      }
+
+      nav a {
+        font-size: 16px;
+        margin-left: 12px;
+      }
+
+      .about-header h2 {
+        font-size: 32px;
+      }
+
+      .about-role {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">SNEGHA R S A</div>
+      <nav>
+        <a href="s.html">Home</a>
+        <a href="s1.html">About</a>
+        <a href="s2.html">Education</a>
+        <a href="s3.html">Skills</a>
+        <a href="s4.html">Internships & Certifications</a>
+        <a href="s5.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Title -->
+  <div class="about-header">
+    <h2>About Me</h2>
+    <p>I’m passionate about building user-centric, responsive websites and exploring modern web technologies.</p>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+
+    <div class="about-role">🎓 MCA Student | <span class="highlight">Full Stack Developer</span></div>
+
+    <p class="about-description">
+      I enjoy crafting elegant, efficient, and scalable web applications using modern tools and frameworks.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-box"><strong>D.O.B:</strong> 18 April 2004</div>
+      <div class="info-box"><strong>Age:</strong> 21</div>
+      <div class="info-box"><strong>Degree:</strong> MCA (Computer Applications)</div>
+      <div class="info-box"><strong>State:</strong> Tamil Nadu</div>
+      <div class="info-box"><strong>Email:</strong> rsasnegha@gmail.com</div>
+    </div>
+
+    <p class="about-bio">
+      I'm currently pursuing my Master of Computer Applications and have a solid foundation in full stack development.
+      I love transforming ideas into real, user-friendly applications. My tech stack includes <span class="highlight">React</span>, <span class="highlight">Node.js</span>, and <span class="highlight">MongoDB</span>. I'm also passionate about UI/UX, performance optimization, and writing clean, maintainable code. My goal is to keep learning and to build products that make a positive impact.
+    </p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Snegha R S A. Portfolio
+  </footer>
+
+</body>
+</html>

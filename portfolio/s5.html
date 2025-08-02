@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snegha RSA | Skills</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-black text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-widest text-[#D8B4FE]">SNEGHA R S A</h1>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="s.html" class="hover:text-[#D8B4FE] transition">Home</a>
+        <a href="s1.html" class="hover:text-[#D8B4FE] transition">About</a>
+        <a href="s2.html" class="hover:text-[#D8B4FE] transition">Education</a>
+        <a href="s3.html" class="hover:text-[#D8B4FE] transition">Skills</a>
+        <a href="s4.html" class="hover:text-[#D8B4FE] transition">Internships & Certifications</a>
+        <a href="s5.html" class="hover:text-[#D8B4FE] transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="max-w-2xl mx-auto px-6 py-20 text-center pb-40" id="contact">
+    <h2 class="text-3xl font-bold mb-8 text-[#6B21A8]">
+      Contact Me: 
+      <a href="mailto:rsasnegha@gmail.com" class="text-blue-600 underline hover:text-blue-800">
+        rsasnegha@gmail.com
+      </a>
+    </h2>
+    
+    <form onsubmit="sendMail(event)" aria-label="Contact Form" class="bg-[#EDE9FE] p-8 rounded-xl shadow-lg space-y-6">
+      <div>
+        <label class="block text-left text-gray-700 font-semibold mb-2">Name</label>
+        <input type="text" id="name" required placeholder="Your name"
+          class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C084FC]" />
+      </div>
+      <div>
+        <label class="block text-left text-gray-700 font-semibold mb-2">Email</label>
+        <input type="email" id="email" required placeholder="Your email"
+          class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C084FC]" />
+      </div>
+      <div>
+        <label class="block text-left text-gray-700 font-semibold mb-2">Message</label>
+        <textarea id="message" rows="5" required placeholder="Your message"
+          class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C084FC]"></textarea>
+      </div>
+      <button type="submit"
+        class="bg-[#6B21A8] text-white px-6 py-3 rounded-lg hover:bg-[#5B21B6] transition font-semibold">
+        Send Message
+      </button>
+
+      <!-- LinkedIn Profile -->
+      <p class="text-left text-gray-700 font-semibold">
+        LinkedIn Profile: 
+        <a href="https://www.linkedin.com/in/snegha-rsa" target="_blank" class="text-blue-600 hover:underline">
+          www.linkedin.com/in/snegha-rsa
+        </a>
+      </p>
+    </form>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    function sendMail(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const mailtoLink = `mailto:rsasnegha@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+  
+  <footer class="fixed bottom-0 w-full bg-black text-white text-center p-4">
+  &copy; 2025 Snegha R S A. Portfolio
+</footer>
+
+</body>
+</html>
